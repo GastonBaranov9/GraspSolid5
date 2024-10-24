@@ -20,7 +20,7 @@ namespace Full_GRASP_And_SOLID
         {
             PopulateCatalogs();
 
-            Recipe recipe = new Recipe();
+            IRecipe recipe = new Recipe(); //Se crea una instancia de Recipe de la interfaz IRecipe
             recipe.FinalProduct = GetProduct("Café con leche");
             recipe.AddStep(GetProduct("Café"), 100, GetEquipment("Cafetera"), 120);
             recipe.AddStep(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60);
